@@ -10,11 +10,15 @@
 <p>getTime() returns the number of milliseconds since January 1, 1970:</p>
 
 <p id="demo"></p>
-
+<p id ="test"> </p>
 <script>
 const d = new Date();
 let time = d.getTime();
 document.getElementById("demo").innerHTML = time;
+fetch('file.txt')
+  .then(response => response.text())
+  .then(text => console.log(text))
+document.getElementById("test").innerHTML = text;
 </script>
 
 </body>
