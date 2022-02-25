@@ -1,7 +1,21 @@
-<p>Hello</p>
-<?php
+<!DOCTYPE html>
+<html>
+<body>
 
-echo "Your IP is";
+<h1>JavaScript Dates</h1>
+<h2>The getTime() Method</h2>
 
-echo $_SERVER["REMOTE_ADDR"];
-?>
+<p>The internal clock in JavaScript starts at midnight January 1, 1970.</p>
+
+<p>getTime() returns the number of milliseconds since January 1, 1970:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+let time = d.getTime();
+document.getElementById("demo").innerHTML = time;
+</script>
+
+</body>
+</html>
